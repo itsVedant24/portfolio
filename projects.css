@@ -1,0 +1,475 @@
+/* =========================================================
+   PROJECT PAGE
+========================================================= */
+
+.projects-page {
+
+  padding: 90px 0;
+
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+========================================================= */
+
+.filter-list {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-bottom: 40px;
+
+}
+
+.filter-list button {
+
+  background: #151515;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: #9ca3af;
+
+  padding: 11px 18px;
+
+  border-radius: 12px;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+}
+
+.filter-list button:hover,
+.filter-list button.active {
+
+  background: #2563eb;
+
+  color: white;
+
+}
+
+
+/* =========================================================
+   PROJECT LIST
+========================================================= */
+
+.project-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 30px;
+
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+
+  display: grid;
+
+  grid-template-columns: 300px 1fr;
+
+  background: #111111;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+
+}
+
+.project-card:hover {
+
+  transform: translateY(-5px);
+
+  border-color: rgba(255,255,255,0.14);
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,0.4);
+
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-banner {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 250px;
+
+  overflow: hidden;
+
+  background: #0b0b0b;
+
+  border-right:
+    1px solid rgba(255,255,255,0.06);
+
+}
+
+.project-banner img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s ease;
+
+}
+
+.project-card:hover .project-banner img {
+
+  transform: scale(1.03);
+
+}
+
+
+/* =========================================================
+   IMAGE SLIDER
+========================================================= */
+
+.project-slider {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.project-slider img {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+
+}
+
+.project-slider img.active-slide {
+
+  opacity: 1;
+
+}
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-content {
+
+  padding: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+}
+
+
+/* =========================================================
+   PROJECT HEADER
+========================================================= */
+
+.project-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+
+}
+
+.project-title {
+
+  font-size: 1.45rem;
+
+  font-weight: 700;
+
+  margin-bottom: 5px;
+
+}
+
+.project-subtitle {
+
+  color: #9ca3af;
+
+  font-size: 0.9rem;
+
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+========================================================= */
+
+.project-links {
+
+  display: flex;
+
+  gap: 12px;
+
+}
+
+.project-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #171717;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 10px 15px;
+
+  border-radius: 12px;
+
+  font-size: 0.85rem;
+
+  color: white;
+
+  transition: 0.3s ease;
+
+}
+
+.project-link:hover {
+
+  background: #202020;
+
+}
+
+.live-demo {
+
+  background: #2563eb;
+
+}
+
+.live-demo:hover {
+
+  opacity: 0.92;
+
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.project-description {
+
+  color: #9ca3af;
+
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+
+  font-size: 0.95rem;
+
+}
+
+
+/* =========================================================
+   TECH STACK
+========================================================= */
+
+.tech-stack {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 28px;
+
+}
+
+.tech-stack span {
+
+  background: #171717;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 7px 14px;
+
+  border-radius: 999px;
+
+  color: #f5f5f5;
+
+  font-size: 0.82rem;
+
+}
+
+
+/* =========================================================
+   PROJECT FEATURES
+========================================================= */
+
+.project-features h3 {
+
+  margin-bottom: 16px;
+
+  font-size: 1rem;
+
+}
+
+.project-features ul {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px 20px;
+
+}
+
+.project-features li {
+
+  position: relative;
+
+  padding-left: 18px;
+
+  color: #9ca3af;
+
+  font-size: 0.9rem;
+
+  line-height: 1.6;
+
+}
+
+.project-features li::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 10px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 980px) {
+
+  .project-card {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .project-banner {
+
+    min-height: 240px;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid rgba(255,255,255,0.06);
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .project-header {
+
+    flex-direction: column;
+
+    gap: 16px;
+
+  }
+
+  .project-links {
+
+    width: 100%;
+
+  }
+
+  .project-link {
+
+    flex: 1;
+
+    justify-content: center;
+
+  }
+
+  .project-features ul {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .project-content {
+
+    padding: 22px;
+
+  }
+
+  .project-title {
+
+    font-size: 1.2rem;
+
+  }
+
+  .project-banner {
+
+    min-height: 200px;
+
+  }
+
+}
